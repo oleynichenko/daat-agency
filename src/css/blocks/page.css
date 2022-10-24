@@ -1,0 +1,81 @@
+.page {
+  position: relative;
+  height: 100%;
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+  line-height: var(--main-line-height);
+  letter-spacing: var(--main-letter-spacing);
+  background-color: var(--pallete-primary-main);
+  transition: background-color;
+  transition-duration: var(--animate-theme-duration);
+  transition-timing-function:  var(--animate-theme-function);
+}
+
+.page__switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  /*opacity: 0;*/
+  /*transition-property: opacity;*/
+  /*transition-duration: ${props =>*/
+  /*  props.theme.animate.bodyLoaded.switch.duration};*/
+  /*transition-timing-function: ${props =>*/
+  /*  props.theme.animate.bodyLoaded.switch.function};*/
+  /*transition-delay: ${props => props.theme.animate.bodyLoaded.switch.delay};*/
+}
+
+.page__menu {
+  position: absolute;
+  top: 34px;
+  left: 30px;
+  z-index: var(--z-index-menu);
+  /*opacity: 0;*/
+  /*transition-property: opacity;*/
+  /*transition-duration: ${props =>*/
+  /*  props.theme.animate.bodyLoaded.switch.duration};*/
+  /*transition-timing-function: ${props =>*/
+  /*  props.theme.animate.bodyLoaded.switch.function};*/
+  /*transition-delay: ${props => props.theme.animate.bodyLoaded.switch.delay};*/
+}
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.page__title {
+  /*opacity: 0;*/
+  /*transition-property: opacity;*/
+  /*transition-duration: ${props =>*/
+  /*  props.theme.animate.bodyLoaded.title.duration};*/
+  /*transition-timing-function: ${props =>*/
+  /*  props.theme.animate.bodyLoaded.title.function};*/
+}
+
+.page__subtitle {
+  /*opacity: 0;*/
+  /*transition-property: opacity;*/
+  /*transition-duration: ${props =>*/
+  /*  props.theme.animate.bodyLoaded.subtitle.duration};*/
+  /*transition-timing-function: ${props =>*/
+  /*  props.theme.animate.bodyLoaded.subtitle.function};*/
+  /*transition-delay: ${props => props.theme.animate.bodyLoaded.subtitle.delay};*/
+}
+
+@media (min-width: 960px) {
+  .page__switch {
+    top: 32px;
+    right: 32px;
+  }
+
+  .page__menu {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 42px;
+  }
+}

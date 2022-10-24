@@ -1,0 +1,32 @@
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: transform;
+  transition-duration: var(--animate-switch-duration);
+  transition-timing-function:  var(--animate-switch-function);
+}
+
+.switch:hover {
+  transform: rotate(180deg);
+}
+
+.switch__icon {
+  box-sizing: border-box;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--pallete-secondary-main);
+
+  background: linear-gradient(
+    to right,
+    var(--pallete-primary-main) 50%,
+    var(--pallete-secondary-main) 50%
+  );
+
+  transition: border var(--animate-theme-duration) var(--animate-theme-function);
+}

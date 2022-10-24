@@ -1,0 +1,7 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import './variables.css';
+@import './global.css';
+@import './blocks/page.css';
+@import './blocks/switch.css';
+@import './blocks/menu.css';
+

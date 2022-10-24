@@ -1,0 +1,40 @@
+:root {
+  --main-font-family: "Open Sans", serif;
+  --main-font-weight: 400;
+  --main-line-height: 1;
+  --main-letter-spacing: normal;
+  --main-body1: 1rem;
+  --main-caption: 0.9rem;
+
+  --secondary-font-family: "Philosopher", sans-serif;
+  --secondary-font-weight: 400;
+  --secondary-line-height: 1;
+  --secondary-letter-spacing: normal;
+  --secondary-large: 0.8rem;
+
+  --pallete-common-grey: '#b3b8bb';
+  --pallete-common-grey-dark: '#5d5d5d';
+  --pallete-common-white: '#fff';
+
+  --animate-theme-duration: 0.8s;
+  --animate-theme-function: ease-in-out;
+
+  --animate-switch-duration: 0.5s;
+  --animate-switch-function: ease-in-out;
+
+  --animate-menu-duration: 0.3s;
+  --animate-menu-function: ease-in-out;
+
+  --z-index-menu: 100;
+  --z-index-contacts: 99;
+}
+
+.light {
+  --pallete-primary-main: #fff;
+  --pallete-secondary-main: #000;
+}
+
+.dark {
+  --pallete-primary-main: #000;
+  --pallete-secondary-main: #fff;
+}
